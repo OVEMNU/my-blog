@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'TirandoCodigo',
+  tagline: 'Un Blog para compartir',
+  favicon: 'img/coding.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -64,18 +64,18 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'TirandoCodigo',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/coding.png',
         },
         items: [
-       //   {
-       //     type: 'docSidebar',
-       //     sidebarId: 'tutorialSidebar',
-       //     position: 'left',
-       //     label: 'Tutorial',
-       //   },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tutorial',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
