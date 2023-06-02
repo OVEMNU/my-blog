@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'TirandoCodigo',
   tagline: 'Un Blog para compartir',
-  favicon: 'img/coding.png',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -78,7 +78,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/OVEMNU/tirandocodigo',
             label: 'GitHub',
             position: 'right',
           },

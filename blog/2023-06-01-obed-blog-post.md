@@ -1,6 +1,6 @@
 ---
-slug: Obed-blog-post
-title: Obed Blog Post
+slug: Obed-blog
+title: Obed Blog 
 authors: obed
 tags: [hello, docusaurus]
 ---

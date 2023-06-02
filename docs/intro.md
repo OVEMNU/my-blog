@@ -2,46 +2,73 @@
 sidebar_position: 1
 ---
 
-# Tutoriales
+# Instrucciones
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Docusaurus crea una página **para cada publicación de blog.**
 
-## Getting Started
+## Crear tu primer blog post
 
-Get started by **creating a new site**.
+Crea un archivo en `blog/2021-02-28-hola-mundo.md`:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+```md title="blog/2021-02-28-hola-mundo.md"
+---
+slug: hola
+title: Hola Mundo
+authors:
+  - name: Juan Penas
+    title: Co-editor de Tirando Codigo
+    url: https://github.com/JuanPenas
+    image_url: https://github.com/JoelMarcey.png
+  - name: Sébastien Lorber
+    title: Docusaurus maintainer
+    url: https://sebastienlorber.com
+    image_url: https://github.com/slorber.png
+tags: [greetings]
+---
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+Felicidades, ya hiciste tu primer blog post!
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Notas Importantes
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+:::info
 
-## Start your site
+Recuerda que el titulo de tu articulo utilizado en `title` es el titulo que se vera reflejado en el arbol de navegacion:
 
-Run the development server:
+```md title="hola-mundo-post.md"
+---
+title: Hola Mundo
+---
+```
+
+:::
+
+:::caution Info
+
+No olvides agregar tus datos en el archivo `blog/authors.yml` esto se requiere para hacer la relacion de autor en tu articulo.
+
+```authors.yml"
+---
+juan:
+  name: Juan Penas
+  title: Editor de Tirando Codigo
+  url: https://juanpenas.com
+  image_url: https://github.com/juan.png
+---
+```
+:::
+
+## Inicia tu sitio
+
+Ejecuta el server de desarrollo:
 
 ```bash
 cd my-website
 npm run start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+El comando `cd` cambia el directorio con el que está trabajando. Para trabajar con su sitio de Docusaurus recién creado, deberá navegar por la terminal allí.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+El comando `npm run start` command construye su sitio web localmente y lo sirve a través de un servidor de desarrollo, listo para que lo vea en http://localhost:3000/.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Abre `docs/intro.md` (esta página) y editar algunas líneas: el sitio **recarga automaticamente** y muestra tus cambios.
